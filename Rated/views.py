@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-# import pywhatkit as kit
+import pywhatkit as kit
 import wikipedia
 
 def homepage(request):  
@@ -17,7 +17,6 @@ def homepage(request):
             ides.append(ios)
             j=0
             ios=[]
-    # print(ides)
     return render(request,"hp.html",{"ids":ides})
 
 def searchpage(request):
@@ -25,7 +24,6 @@ def searchpage(request):
     b=[]
     if request.GET.get('mov'):
         key=request.GET.get('mov')
-        # print(key)
         for i in a:
             if i.lower().find(key.lower())>=0 :
                 loc="/static/pics/"+i+".jpg"
@@ -41,6 +39,6 @@ def infopage(request,name):
     return render(request,"info.html",{"name":name,"loc":loc,"data":data})
 
 def play_yt(request,name):
-#     query=name+" movie trailer"
-#     kit.playonyt(query)
+    query=name+" movie trailer"
+    kit.playonyt(query)
     return redirect("/")
