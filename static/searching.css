@@ -1,0 +1,43 @@
+body{
+    margin:0;
+    overflow-x: hidden;
+    background-color:rgb(16, 25, 40);
+    width: 100vw;
+}
+.searchbar{
+    /* position: fixed; */
+    width:max-content;
+    
+    /* z-index: 111; */
+}
+.head{
+    text-decoration: none;
+    color: white;
+    font-family: "Anta","Teko" ;
+}
+/* .container-fluid{ */
+    /* margin-left:45vw; */
+/* } */
+
+.searchresult{
+    display:flex;
+    flex-wrap: wrap;
+    width:100vw;
+    justify-content: space-around;
+}
+.card{
+    width: 20em;
+    height:40vh;
+    margin:1vw;
+}
+.card-img-top{
+    height:30vh;
+    overflow: hidden;
+}
+.card-body{
+    text-align: center;
+    
+}
+.llinks{
+    text-decoration: none;
+}
