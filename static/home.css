@@ -15,10 +15,12 @@ body{
     font-family: "Anta","Teko" ;
 }
 .mainhead{
-  position:relative;
-  top:8vh;
+  /* position:relative;
+  top:8vh; */
+  /* margin-top: 10vh; */
+  padding-top: 7vh;
   max-height:70vh;
-  z-index: 10;
+  /* z-index: 10; */
   background-color: rgb(16, 25, 40);
   opacity:100%
 }
@@ -29,10 +31,10 @@ body{
 }
 
 .mainpic{
-  position:relative;
-  top:3vh;
-  width:100vw;
-  max-height: 70vh;
+  /* position:relative; */
+  /* top:3vh; */
+  width:100%;
+  max-height: 100%;
   object-fit:cover;
     
 }
@@ -40,7 +42,8 @@ body{
 .vignette-img{
     /* position: absolute; */
     transition: all ease .5s;
-    
+    width:100vw;
+    max-height:70vh;
     /* max-height:70vh; */
 }
 .vignette:hover .vignette-img{
@@ -48,7 +51,7 @@ body{
 }
 .vignette:hover .vignette-text{
     opacity: 100%;
-}
+} 
 .vignette-text{
   
     transition: all ease .5s;
@@ -92,8 +95,8 @@ body{
   .card{
     height:20vh;
     /* max-width:50vw; */
-    width:45vw;
-    position: relative;
+    width:100%;
+    /* position: relative; */
     /* left:-18.5vw; */
 }
 
@@ -117,13 +120,17 @@ body{
 
 .caroa{
   display:block;
-  height:35vh;
+  height:30vh;
+  
+  padding-left: 5%;
+  padding-right: 5%;
+
   
 }
 .card{
     height:30vh;
-    width:20vw;
-    min-width:18vw;
+    width:100%;
+    /* min-width:18vw; */
     
 }
 
@@ -150,9 +157,8 @@ body{
   text-align: center;
   padding:10%;
   font-weight: 800;
-  color: rgb(17, 97, 226);
-  text-shadow: rgb(219, 74, 74) 5px 5px 15px;
-  z-index: 0;
+  color:black;
+  z-index: 1;
   
 }
 
@@ -171,12 +177,13 @@ body{
 .carousel-control-prev,.carousel-control-next{
   z-index: 10;
   height: 31vh;
+  width: min-content;
 }
 .carousel-control-prev{
-  left:-9vw;
+  left:-3vw;
 }
 .carousel-control-next{
-  right:-7vw;
+  right:-3vw;
 }
 
 .row{
@@ -189,6 +196,10 @@ hr{
   color: aliceblue;
 }
 
+.row{
+  margin: 5vw;
+
+}
 
 @media screen and (min-width: 1768px) {
   .carousel-inner .carousel-item-end.active,
@@ -202,19 +213,11 @@ hr{
   .information{
     position:relative;
     left: 0vw;
-    color:white;
+    color:rgb(0, 0, 0);
     font-size: 160%;
   }
 }
 
-@media screen and (max-width:520px){
-  .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
 
 @media screen and (max-width:730px) {
  
@@ -222,18 +225,43 @@ hr{
     position:relative;
     text-align: left;
     padding-left: 10vw;
-    color:white;
+    color:rgb(0, 0, 0);
     font-size: 2vw;
+  }
+  .msamm{
+    font-size: 5vw;
   }
   .card{
     height:30vh;
     /* max-width:50vw; */
-    width:75vw;
-    position: relative;
-    left:0.5vw;
+    /* width:75vw; */
+    /* position: relative; */
+    /* left:0.5vw; */
 }
   .row{
     margin:0vh !important;
   }
+  .carousel-control-prev{
+    left: 0vw;
+  }
+  .carousel-control-next{
+    right:0vw;
+  }
 
+}
+@media screen and (max-width:991px){
+.mainhead{
+  padding-top: 32vh;
+}
+}
+@media screen and (max-width:520px){
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+  .msamm{
+    font-size: 6vw;
+  }
 }
