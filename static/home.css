@@ -1,110 +1,99 @@
-body{
-  margin:0;
+body {
+  margin: 0;
   overflow-x: hidden;
-    background-color:rgb(16, 25, 40);
-    width: 100vw;
+  background-color: rgb(16, 25, 40);
+  width: 100vw;
 }
-.navbar{
+.navbar {
   position: fixed;
-  width:100vw;
+  width: 100vw;
   z-index: 111;
 }
-.head{
-    text-decoration: none;
-    color: white;
-    font-family: "Anta","Teko" ;
+.head {
+  text-decoration: none;
+  color: white;
+  font-family: "Anta", "Teko";
 }
-.mainhead{
+.mainhead {
   /* position:relative;
   top:8vh; */
   /* margin-top: 10vh; */
   padding-top: 7vh;
-  max-height:70vh;
+  max-height: 70vh;
   /* z-index: 10; */
   background-color: rgb(16, 25, 40);
-  opacity:100%
+  opacity: 100%;
 }
-.vignette{
-  position:relative;
+.vignette {
+  position: relative;
   max-height: 70vh;
-
 }
 
-.mainpic{
+.mainpic {
   /* position:relative; */
   /* top:3vh; */
-  width:100%;
+  width: 100%;
   max-height: 100%;
-  object-fit:cover;
-    
+  object-fit: cover;
 }
 
-.vignette-img{
-    /* position: absolute; */
-    transition: all ease .5s;
-    width:100vw;
-    max-height:70vh;
-    /* max-height:70vh; */
+.vignette-img {
+  /* position: absolute; */
+  transition: all ease 0.5s;
+  width: 100vw;
+  max-height: 70vh;
+  /* max-height:70vh; */
 }
-.vignette:hover .vignette-img{
-    opacity: 60%;
+.vignette:hover .vignette-img {
+  opacity: 60%;
 }
-.vignette:hover .vignette-text{
-    opacity: 100%;
-} 
-.vignette-text{
-  
-    transition: all ease .5s;
-    color:rgb(0, 98, 255);
-    font-family: "Teko";
-    font-weight: 500;
-    position: absolute;
-    top: 10vh;
-    left: 5vw;
-    font-size: 5vw;
-    z-index: 2;
-    opacity:0%;
-    text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+.vignette:hover .vignette-text {
+  opacity: 100%;
 }
-
-
+.vignette-text {
+  transition: all ease 0.5s;
+  color: rgb(0, 98, 255);
+  font-family: "Teko";
+  font-weight: 500;
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  font-size: 5vw;
+  z-index: 2;
+  opacity: 0%;
+  text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+}
 
 /* #################################################################### */
 
-.msamm{
-    color: white;
-    font-family: "Anta","Teko" ;
-    font-size: 3vw;
-    text-align: center;
-    padding-top: 5vh;
+.msamm {
+  color: white;
+  font-family: "Anta", "Teko";
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 5vh;
 }
 
-.caros{
+.caros {
   margin-top: 5vh;
 }
 
-@media screen and (max-width: 1767px) and (min-width:730px) {
-  
-  .information{
-    position:relative;
+@media screen and (max-width: 1767px) and (min-width: 730px) {
+  .information {
+    position: relative;
     text-align: left;
     padding-left: 10vw;
-    color:white;
+    color: white;
     font-size: 2vw;
   }
-  .card{
-    height:20vh;
+  .card {
+    height: 20vh;
     /* max-width:50vw; */
-    width:100%;
+    width: 100%;
     /* position: relative; */
     /* left:-18.5vw; */
+  }
 }
-
-}
-
-
-
-
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -118,87 +107,77 @@ body{
   transform: translateX(0);
 }
 
-.caroa{
-  display:block;
-  height:30vh;
-  
+.caroa {
+  display: block;
+  height: 30vh;
+
   padding-left: 5%;
   padding-right: 5%;
-
-  
 }
-.card{
-    height:30vh;
-    width:100%;
-    /* min-width:18vw; */
-    
+.card {
+  height: 30vh;
+  width: 100%;
+  /* min-width:18vw; */
 }
 
-.card-img{
+.card-img {
   height: 100%;
-  width:99.9%;
+  width: 99.9%;
   display: flex;
-  justify-content: center ;
-  transition : all ease 0.3s;
+  justify-content: center;
+  transition: all ease 0.3s;
   z-index: 2;
 }
-.img-fluid{
-  
-  height:99.9%;
-  width:100%;
+.img-fluid {
+  height: 99.9%;
+  width: 100%;
 }
 
-
-
-.information{
+.information {
   position: relative;
-  top:-25vh;
-  left:-1vw;
+  top: -25vh;
+  left: -1vw;
   text-align: center;
-  padding:10%;
+  padding: 10%;
   font-weight: 800;
-  color:black;
+  color: black;
   z-index: 1;
-  
 }
 
-.card:hover .card-img{
+.card:hover .card-img {
   opacity: 50%;
-  
 }
 
-.img-fluid:hover .information:nth-child(){
+.img-fluid:hover .information:nth-child() {
   /* opacity: 100%; */
   z-index: 4;
-  
 }
 
-
-.carousel-control-prev,.carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
   z-index: 10;
   height: 31vh;
   width: min-content;
 }
-.carousel-control-prev{
-  left:-3vw;
+.carousel-control-prev {
+  left: -3vw;
 }
-.carousel-control-next{
-  right:-3vw;
+.carousel-control-next {
+  right: -3vw;
 }
 
-.row{
-  margin:10vh;
+.row {
+  margin: 10vh;
   padding-top: 5vh;
   align-self: center;
 }
 
-hr{
+hr {
   color: aliceblue;
 }
 
-.row{
+.row {
   margin: 5vw;
-
 }
 
 @media screen and (min-width: 1768px) {
@@ -210,58 +189,73 @@ hr{
   .carousel-inner .carousel-item-prev {
     transform: translateX(-25%);
   }
-  .information{
-    position:relative;
+  .information {
+    position: relative;
     left: 0vw;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 160%;
   }
 }
 
-
-@media screen and (max-width:730px) {
- 
-  .information{
-    position:relative;
+@media screen and (max-width: 730px) {
+  .information {
+    position: relative;
     text-align: left;
     padding-left: 10vw;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 2vw;
   }
-  .msamm{
+  .msamm {
     font-size: 5vw;
   }
-  .card{
-    height:30vh;
+  .card {
+    height: 30vh;
     /* max-width:50vw; */
     /* width:75vw; */
     /* position: relative; */
     /* left:0.5vw; */
-}
-  .row{
-    margin:0vh !important;
   }
-  .carousel-control-prev{
+  .row {
+    margin: 0vh !important;
+  }
+  .carousel-control-prev {
     left: 0vw;
   }
-  .carousel-control-next{
-    right:0vw;
+  .carousel-control-next {
+    right: 0vw;
   }
-
 }
-@media screen and (max-width:991px){
-.mainhead{
-  padding-top: 32vh;
+@media screen and (max-width: 991px) {
+  .mainhead {
+    padding-top: 32vh;
+  }
 }
-}
-@media screen and (max-width:520px){
+@media screen and (max-width: 520px) {
   .carousel-inner .carousel-item > div {
     display: none;
   }
   .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
-  .msamm{
+  .msamm {
     font-size: 6vw;
   }
+}
+
+.highlighter,
+p {
+  font-family: "Anta";
+  color: white;
+  font-size: 3vw;
+  font-weight: 700;
+  transition: all ease 0.05s;
+  text-align: center;
+}
+
+.highlighter:hover {
+  color: #08d9d6;
+}
+
+.highlighter2:hover {
+  color: #ec2121;
 }

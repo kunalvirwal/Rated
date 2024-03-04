@@ -1,86 +1,83 @@
-body{
-    margin:0;
-    overflow-x: hidden;
-    background-color:rgb(16, 25, 40);
-    width: 100vw;
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(16, 25, 40);
+  width: 100vw;
 }
-.navbar{
-    position: fixed;
-    width:100vw;
-    z-index: 111;
+.navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 111;
 }
-.head{
-    text-decoration: none;
-    color: white;
-    font-family: "Anta","Teko" ;
+.head {
+  text-decoration: none;
+  color: white;
+  font-family: "Anta", "Teko";
 }
-.page{
-    display:flex;
-    justify-content: space-between;
-    padding-top: 7vh ;
+.page {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7vh;
 }
-.mainimg{
-    
-    align-items: flex-start;
+.mainimg {
+  align-items: flex-start;
 }
-.mainpic{
-    margin: 2vw;
-    max-height:90vh;
-    min-height: 60vh;
-    width:50vw;
-    /* object-fit: contain; */
-    border: 30px rgb(109, 123, 247) solid;
-  
+.mainpic {
+  margin: 2vw;
+  max-height: 90vh;
+  min-height: 60vh;
+  width: 50vw;
+  /* object-fit: contain; */
+  border: 30px rgb(109, 123, 247) solid;
 }
 
-.mainhead2{
-    font-size: 4vw;
-    margin:2vw;
-    font-family: "Anta";
-    text-shadow: rgb(91, 61, 201) 5px 5px 15px;
-    text-decoration: underline;
+.mainhead2 {
+  font-size: 4vw;
+  margin: 2vw;
+  font-family: "Anta";
+  text-shadow: rgb(91, 61, 201) 5px 5px 15px;
+  text-decoration: underline;
 }
 
-.inf p{
-    font-size: 2vw;
-    margin:2vw;
+.inf p {
+  font-size: 2vw;
+  margin: 2vw;
 }
 
-.inf{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
+.inf {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.yt{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
+.yt {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
 }
-.box-icon{
-    position: relative;
-    top:-5px;
-}
-
-.yt h3{
-    position: relative;
-    top:6px;
-    /* left:20vw; */
+.box-icon {
+  position: relative;
+  top: -5px;
 }
 
-@media screen and (max-width:800px){
-    .page{
-        flex-wrap: wrap-reverse;
-    }
-    .mainpic{
-        width: 96vw;
-        object-fit: contain;
-        min-height:0vh;
-    }
-    .mainhead2{
-        font-size: 10vw;
-    }
+.yt h3 {
+  position: relative;
+  top: 6px;
+  /* left:20vw; */
+}
+
+@media screen and (max-width: 800px) {
+  .page {
+    flex-wrap: wrap-reverse;
+  }
+  .mainpic {
+    width: 96vw;
+    object-fit: contain;
+    min-height: 0vh;
+  }
+  .mainhead2 {
+    font-size: 10vw;
+  }
 }
